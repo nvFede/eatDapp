@@ -8,16 +8,16 @@ contract Food {
 
     struct FoodItem {
         address owner;
-        string name;
         string url;
+        string name;
         string originCountry;
     }
 
     FoodItem[] public foodItems;
 
     function addFoodItem(
-        string memory name,
         string memory url,
+        string memory name,
         string memory originCountry
     ) public {
         foodItems.push(FoodItem(msg.sender, name, url, originCountry));

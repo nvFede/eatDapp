@@ -3,6 +3,8 @@ require('dotenv').config()
 
 const { ALCHEMY_API_KEY, GOERLI_PRIVATE_KEY } = process.env;
 
+console.log("ALCHEMY_API_KEY", ALCHEMY_API_KEY);
+
 /** @type import('hardhat/config').HardhatUserConfig */
 
 module.exports = {
